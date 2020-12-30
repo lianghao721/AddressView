@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tlTabLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:tabBackground="@color/trans"
+        app:tabIndicator="@drawable/tablayout_indicator"
+        app:tabIndicatorColor="@color/peru"
+        app:tabMode="scrollable"
+        app:tabRippleColor="@color/trans"
+        app:tabSelectedTextColor="@color/peru"
+        app:tabTextAppearance="@style/ShopTabLayoutTextStyle"
+        app:tabTextColor="@color/dark3" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_separator_dark_tablet" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
